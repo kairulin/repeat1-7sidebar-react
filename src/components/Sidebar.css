@@ -1,0 +1,90 @@
+.header{
+    width: 100%;
+    background: #15171c;
+    height: 80px;
+    display: flex;    
+    align-items: center;
+}
+
+.header .icon-menu{
+    color: white;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.move {
+    position: relative;
+    left: 0;
+    transition: all .3s ease;
+}
+.move.active {
+    left: 250px;
+}
+
+.sidebar{
+    background: #15171c;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all .3s ease;
+}
+
+
+
+.sidebar.active{
+    left: 0;
+}
+
+.sidebar .icon-close{
+    color: white;
+    margin-left: 2rem;
+    font-size: 2rem;
+    height: 80px;
+    display: flex;    
+    align-items: center;
+}
+
+.sidebar .items{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.sidebar .items:hover{
+    background: #252831;
+    border-left: 4px solid #632ce4;
+    cursor: pointer;
+}
+
+.sidebar .items .items-title{
+    margin-left: 16px;
+}
+
+.sidebar .items .sub-toggle{
+    cursor: pointer;
+}
+
+.sidebar .sub{
+    background: #414757;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding-left: 3rem;
+    color: white;
+}
+.sidebar .sub:hover{
+    background: #632ce4;
+    cursor: pointer;
+}
+
+.sidebar .sub .sub-title{
+    margin-left: 16px;
+}
+
